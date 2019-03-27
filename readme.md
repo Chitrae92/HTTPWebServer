@@ -1,15 +1,10 @@
-Name : Chitra Elangovan
-Programming Assignment 1
-Date : 02/06/2019
-
-High-level description of the assignment and what the program does:
-
+### HTTP WebServer
 A HTTP webserver program is built in Java. The server program runs and listens for connections on the socket bound to port
 number given as input. The browser is used as the client. The client tries to connect to the server and send 
 HTTP requests by specifying the IP address(localhost) and port number of the server. The client connections are managed by the 
 Socket object. The server program uses ServerSocket object's accept() method for the server to listen for requests from 
-the client and send the responses. The client's HTTP request will be in the format (HTTP-method path-of-the-requested-resource 
-version of HTTP) 
+the client and send the responses. The client's HTTP request will be in the format (HTTP_method path_of_the_requested_resource 
+version_of_HTTP) 
 Eg: GET /index.html HTTP/1.0
 The server spawns a new thread for each HTTP request and is handled by the HTTPServer class. 
 It then parses the HTTP request from client to identify the HTTP method, requested resource and HTTP version.
@@ -20,7 +15,7 @@ If the requested file is available in the server directory, it checks for the fi
 there, program returns 403 Forbidden error. Otherwise, the program responds to the client with the requested files 
 and closes the connection after serving the request with status as 200. If the file is not found it returns 404 File not found 
 error.
-Following are the HTTP Status codes used in the program:
+##### Following are the HTTP Status codes used in the program:
 200 - OK
 400 - Bad Request
 403 - Forbidden
@@ -29,26 +24,14 @@ Following are the HTTP Status codes used in the program:
 505 - HTTP Version Not supported
 The file formats supported by the server includes jpeg,jpg,html,txt,css,class and png.
 
-List of submitted files:
-*Readme.txt
-*Scriptfile.docx
-*Makefile.txt
-*Server.java
-*Server.class
-*HTTPServer.class
-*400.html
-*403.html
-*404.html
-*501.html
-*505.html
 
-Instructions to run the program:
+##### Instructions to run the program:
 The server files and the html  files for error handling(400.html,403.html,404.html,501.html,505.html) should be in 
 the server directory i.e. document_root
 
 Command for compiling and running the server program
 >javac Server.java
->java Server -document_root "/home/chitra/Desktop/webserver_files" -port 8888
+>java Server -document_root "/home/Desktop/webserver_files" -port 8888
 
 Information to know:
 Please download the files 400.html,403.html,404.html,501.html,505.html to the document_root(server directory) since the server 
@@ -58,5 +41,3 @@ References:
 https://www.jmarshall.com/easy/http/
 https://www.restapitutorial.com/httpstatuscodes.html
 https://cs.fit.edu/~mmahoney/cse3103/java/Webserver.java
-
-https://www.jmarshall.com/easy/http/

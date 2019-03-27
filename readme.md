@@ -36,6 +36,6 @@ the server directory i.e. document_root
 >java Server -document_root "/home/Desktop/webserver_files" -port 8888
 
 ##### References:
-https://www.jmarshall.com/easy/http/
-https://www.restapitutorial.com/httpstatuscodes.html
-https://cs.fit.edu/~mmahoney/cse3103/java/Webserver.java
+- https://www.jmarshall.com/easy/http/
+- https://www.restapitutorial.com/httpstatuscodes.html
+- https://cs.fit.edu/~mmahoney/cse3103/java/Webserver.java

@@ -1,5 +1,5 @@
 ### HTTP WebServer
-- A HTTP webserver program built in Java runs and listens for connections on the socket bound to port
+- A HTTP webserver program built using Java, runs and listens for connections on the socket bound to port
 number given as input. 
 - The browser is used as the client and the client tries to connect to the server and send HTTP requests by specifying the IP address(localhost) and port number of the server.
 - The client connections are managed by the Socket object. The server program uses ServerSocket object's accept() method for the server to listen for requests from the client and send the responses. 
@@ -10,11 +10,11 @@ Eg: GET /index.html HTTP/1.0
 - It then parses the HTTP request from client to identify the HTTP method, requested resource and HTTP version.
 - If the request is a bad request then it returns error 400. 
 - The server program handles only GET methods and returns 501 error for other HTTP methods. 
-- If the HTTP version is not 1.0 or 1.1 it returns 505 error.
+- If the HTTP version is not 1.0 or 1.1, it returns 505 error.
 - If the requested file is available in the server directory, it checks for the file permissions. If the access permission is not
 there, program returns 403 Forbidden error. 
 - Otherwise, the program responds to the client with the requested files and closes the connection after serving the request with status as 200.
-- If the file is not found it returns 404 File not found error.
+- If the file is not found, it returns 404 File not found error.
 
 ##### Following are the HTTP Status codes used in the program:
 - 200 - OK
